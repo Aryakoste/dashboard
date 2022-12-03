@@ -5,6 +5,7 @@ html {
 
 body {
     box-sizing: border-box;
+    overflow: hidden;
     margin: 0;
     width: 100%;
     height: 100%;
@@ -176,11 +177,16 @@ main {
 .app-container {
     padding: 2.5%;
     height: 100%;
+    overflow: scroll;
 }
 
 .app-header {
     display: flex;
     justify-content: space-between;
+}
+
+.app-header p {
+    color: #B5B5C3;
 }
 
 .app-header h1 {
@@ -398,6 +404,58 @@ main {
     display: flex;
     justify-content: space-between;
     color: #646477;
+}
+
+.big-card {
+    height: 40%;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 20px;
+    color: #3F4254;
+}
+
+.bcard-header {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-card-h-l span{
+    font-size: 20px;
+}
+.big-card-h-l div{
+    color: #8c8c9c;
+}
+
+.bcard-content-list {
+    border-bottom: 1px solid grey;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bcard-content-list div:nth-child(2) {
+    align-self: center;
+    color: black;
+    font-size: 16px;
+}
+
+.bcl div:first-child {
+    font-size: 18px;
+}
+
+.bcl div:nth-child(2){
+    margin-top: 5px;
+    color: #8c8c9c;
+}
+
+.view-button {
+    align-self: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(212, 212, 212);
 }
 
 @media (max-width: 1200px) {
